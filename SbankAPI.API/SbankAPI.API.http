@@ -1,0 +1,6 @@
+@SbankAPI.API_HostAddress = http://localhost:5139
+
+GET {{SbankAPI.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

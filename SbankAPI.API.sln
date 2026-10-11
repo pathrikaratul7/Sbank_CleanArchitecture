@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37203.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SbankAPI.API", "SbankAPI.API\SbankAPI.API.csproj", "{DDBEB833-190E-442F-BAAC-E3696FE2DB91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SbankAPI.Application", "SbankAPI.Application\SbankAPI.Application.csproj", "{C1ACE8D9-6AAE-4F9D-8087-91F1E9DD7493}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SbankAPI.Domain", "SbankAPI.Domain\SbankAPI.Domain.csproj", "{C9A62420-5229-4DC8-B181-470D8588EDDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SbankAPI.Infrastructur", "SbankAPI.Infrastructur\SbankAPI.Infrastructur.csproj", "{35EA8369-B55C-4CCB-923A-11593E41EB17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDBEB833-190E-442F-BAAC-E3696FE2DB91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDBEB833-190E-442F-BAAC-E3696FE2DB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDBEB833-190E-442F-BAAC-E3696FE2DB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDBEB833-190E-442F-BAAC-E3696FE2DB91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1ACE8D9-6AAE-4F9D-8087-91F1E9DD7493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1ACE8D9-6AAE-4F9D-8087-91F1E9DD7493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1ACE8D9-6AAE-4F9D-8087-91F1E9DD7493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1ACE8D9-6AAE-4F9D-8087-91F1E9DD7493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A62420-5229-4DC8-B181-470D8588EDDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A62420-5229-4DC8-B181-470D8588EDDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A62420-5229-4DC8-B181-470D8588EDDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A62420-5229-4DC8-B181-470D8588EDDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35EA8369-B55C-4CCB-923A-11593E41EB17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35EA8369-B55C-4CCB-923A-11593E41EB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35EA8369-B55C-4CCB-923A-11593E41EB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35EA8369-B55C-4CCB-923A-11593E41EB17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7AB45675-5D23-48C3-A53B-DCADA88B5637}
+	EndGlobalSection
+EndGlobal
