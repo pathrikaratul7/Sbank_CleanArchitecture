@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using SbankAPI.Application.Interface;
 
 using SbankAPI.Infrastructur.Repositories;
-using SbankAPI.Infrastructur.UnitOfWork;
+
 using SbankAPI.Infrastructure.Data;
 
 namespace SbankAPI.Infrastructur
@@ -24,7 +24,7 @@ namespace SbankAPI.Infrastructur
             });
 
             services.AddScoped<IUserRepository, UserRepositories>();
-            services.AddScoped<IUnitOfWork, UnitOfWork.UnitOfWork>();
+          //  services.AddScoped<IUnitOfWork, UnitOfWork.UnitOfWork_>();
 
             return services;
         }
