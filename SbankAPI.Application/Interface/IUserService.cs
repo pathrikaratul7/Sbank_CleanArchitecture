@@ -11,5 +11,6 @@ namespace SbankAPI.Application.Interface
     public interface IUserService
     {
         Task<UserResponseDTO> AddUserAsynch(CreateUserDto createUserDto , CancellationToken cancellationToken= default);
+        Task<UserResponseDTO> UpdateUserProfileAsync(long userId, string name, string mobile, CancellationToken cancellationToken = default);
     }
 }

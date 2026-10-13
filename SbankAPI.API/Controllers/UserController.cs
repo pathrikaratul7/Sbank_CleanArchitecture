@@ -23,5 +23,15 @@ namespace SbankAPI.API.Controllers
             var result = await _service.AddUserAsynch(createUserDto, cancellationToken);
             return CreatedAtAction(nameof(AddUser), result);
         }
+
+        [HttpPut("{userId}")]
+        public async Task<ActionResult<UserResponseDTO>> UpdateUserProfile(
+            long userId,
+            [FromBody] UpdateUserProfileDto updateDto,
+            CancellationToken cancellationToken)
+        {
+            var result = await _service.UpdateUserProfileAsync(userId, updateDto.Name, updateDto.Mobile, cancellationToken);
+            return Ok(result);
+        }
     }
 }

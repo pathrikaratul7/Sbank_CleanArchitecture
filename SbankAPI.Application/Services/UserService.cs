@@ -45,5 +45,25 @@ namespace SbankAPI.Application.Services
                 Mobile = user.UMobile
             };
         }
+
+        public async Task<UserResponseDTO> UpdateUserProfileAsync(long userId, string name, string mobile, CancellationToken cancellationToken = default)
+        {
+            var user = await _repository.GetUserByIdAsync(userId, cancellationToken);
+            
+            if (user == null)
+                throw new KeyNotFoundException($"User with ID {userId} not found.");
+
+            user.UpdateProfile(name, mobile);
+            
+            await _repository.SaveChangesAsync();
+
+            return new UserResponseDTO
+            {
+                UserID = user.UserID,
+                UserName = user.UName,
+                Email = user.UEmail,
+                Mobile = user.UMobile
+            };
+        }
     }
 }

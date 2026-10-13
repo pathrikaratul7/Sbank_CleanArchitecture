@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SbankAPI.Application.Interface;
 
-using SbankAPI.Infrastructur.Repositories;
+using SbankAPI.Infrastructur.Repository;
 
 using SbankAPI.Infrastructure.Data;
 

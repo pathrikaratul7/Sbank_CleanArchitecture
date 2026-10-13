@@ -1,8 +1,9 @@
-﻿using SbankAPI.Application.Interface;
+﻿using Microsoft.EntityFrameworkCore;
+using SbankAPI.Application.Interface;
 using SbankAPI.Domain.Entities;
 using SbankAPI.Infrastructure.Data;
 
-namespace SbankAPI.Infrastructur.Repositories
+namespace SbankAPI.Infrastructur.Repository
 {
     public class UserRepositories : IUserRepository
     {
@@ -17,7 +18,10 @@ namespace SbankAPI.Infrastructur.Repositories
         {
             await _context.Tbl_Users.AddAsync(user, cancellationToken);
         }
-
+        public async Task<Tbl_User?> GetUserByIdAsync(long userId, CancellationToken cancellationToken = default)
+        {
+            return await _context.Tbl_Users.FirstOrDefaultAsync(u => u.UserID == userId, cancellationToken);
+        }
         public async Task SaveChangesAsync()
         {
             await _context.SaveChangesAsync();
